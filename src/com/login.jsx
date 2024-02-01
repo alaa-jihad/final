@@ -1,0 +1,43 @@
+import React from 'react';
+
+//import user_icon from './person.png';
+import email_icon from './email.png';
+import password_icon from './password.png';
+import { Link } from 'react-router-dom';
+import './Login.css'
+
+const Login = () => {
+  
+
+  
+  
+
+  return (
+    <div className='container'>
+      <div className="header">
+        <div className="text">Login</div>
+        <div className="underline"></div>
+      </div>
+      <div className="inputs">
+          
+        <div className="input">
+          <img src={email_icon} alt="" />
+          <input type="email" name="email" placeholder='Email'  />
+        </div>
+        <div className="input">
+          <img src={password_icon} alt="" />
+          <input type="password" name="password" placeholder='Password'  />
+        </div>
+      </div>
+      
+        
+      
+      <div className="submit-container">
+        <Link to="/WeatherApp" className='submit'>Login</Link>
+        <Link to="/SignUp" className='submit'>SignUp</Link>
+      </div>
+    </div>
+  );
+
+  };
+export default Login;
